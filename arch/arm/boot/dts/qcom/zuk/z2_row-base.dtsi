@@ -203,37 +203,3 @@
 	qcom,wave-play-rate-us = <4166>;
 	qcom,ilim-ma = <85>;	
 };
-
-&soc {
-	sound-9335 {
-		qcom,msm-dai-tdm-tert-rx {
-			qcom,msm-cpudai-tdm-clk-internal = <0>;
-			qcom,msm-cpudai-tdm-sync-mode = <1>;
-			qcom,msm-cpudai-tdm-sync-src = <0>;
-			/delete-property/ pinctrl-names;
-			/delete-property/ pinctrl-0;
-			/delete-property/ pinctrl-1;
-		};
-		qcom,msm-dai-tdm-tert-tx {
-			qcom,msm-cpudai-tdm-clk-internal = <0>;
-			qcom,msm-cpudai-tdm-sync-mode = <1>;
-			qcom,msm-cpudai-tdm-sync-src = <0>;
-		};
-		qcom,msm-dai-tdm-quat-rx {
-			qcom,msm-cpudai-tdm-clk-internal = <0>;
-			qcom,msm-cpudai-tdm-sync-mode = <1>;
-			qcom,msm-cpudai-tdm-sync-src = <0>;
-			/delete-property/ pinctrl-names;
-			/delete-property/ pinctrl-0;
-			/delete-property/ pinctrl-1;
-		};
-		qcom,msm-dai-tdm-quat-tx {
-			qcom,msm-cpudai-tdm-clk-internal = <0>;
-			qcom,msm-cpudai-tdm-sync-mode = <1>;
-			qcom,msm-cpudai-tdm-sync-src = <0>;
-			/delete-property/ pinctrl-names;
-			/delete-property/ pinctrl-0;
-			/delete-property/ pinctrl-1;
-		};
-	};
-};
