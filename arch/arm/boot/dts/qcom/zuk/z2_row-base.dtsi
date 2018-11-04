@@ -154,6 +154,12 @@
 			"MIC BIAS3", "Handset Mic",
 			"Lineout_1 amp", "LINEOUT1";
 	};
+	qcom,msm-thermal {
+		qcom,poll-ms = <250>;
+		qcom,core-limit-temp = <80>;
+		qcom,freq-mitigation-temp = <95>;
+		qcom,freq-mitigation-temp-hysteresis = <10>;
+	};
 };
 
 &slim_msm {
