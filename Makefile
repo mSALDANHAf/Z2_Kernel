@@ -655,7 +655,7 @@ include arch/$(SRCARCH)/Makefile
 ifeq ($(cc-name),clang)
 KBUILD_CFLAGS	+= -O3 $(call cc-option, -fsanitize=local-init)
 else
-KBUILD_CFLAGS	+= -O2
+KBUILD_CFLAGS	+= -Os
 endif
 
 KBUILD_CFLAGS	+= $(call cc-option,-fno-delete-null-pointer-checks,)
